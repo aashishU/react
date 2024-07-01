@@ -14,7 +14,7 @@ function Github() {
 	// 		});
 	// }, []);
 
-	// here we automatically get the result from githubInfoLoader function.
+	// Here we automatically get the result from githubInfoLoader function.
 	const data = useLoaderData();
 
 	return (
