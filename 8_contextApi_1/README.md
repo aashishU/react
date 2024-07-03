@@ -1,6 +1,7 @@
 # Context API
 
 - The Context API is a feature that enables state management and sharing of data across different components or parts of an application without passing props down manually at every level (also known as Prop Drilling). It is particularly useful for managing global state, theme settings, or user authentication data, and is commonly used in React applications.
+
 ---
 
 ### Step 1 : Create a Store
