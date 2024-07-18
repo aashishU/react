@@ -1,4 +1,4 @@
-import conf from '../conf'
+import conf from '../conf/conf.js'
 import { Client, ID, Databases, Storage, Query } from "appwrite"
 
 export class Service {
@@ -13,6 +13,7 @@ export class Service {
         this.databases = new Databases(this.client);
         this.bucket = new Storage(this.client);
     }
+
 
     // create new post
     async createPost({ title, slug, content, featuredImage, status, userId }) {
@@ -97,7 +98,7 @@ export class Service {
         }
     }
 
-    // file upload service
+    // file upload services
 
     // upload file
     async uploadFile(file) {
@@ -137,5 +138,5 @@ export class Service {
 
 }
 
-const service = new Service()
-export default service
+const appwriteService = new Service()
+export default appwriteService
